@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Doggr</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/full-slider.css" rel="stylesheet">
+	<link href="css/overlay.css" rel="stylesheet">
+	
+	<!--Additional Scripts-->
+	<script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+	
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Doggr</a> <!-- Maybe remove the link?  -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                
+				<!-- Upper left hand menu! -->
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> About <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li style="padding-left:15px; padding-right:5px; font-size:20px;"> Every dog has its day. Every human should too. </li>
+							<li class="divider"></li>
+							<li style="padding-left:5px; padding-right:5px; font-size:20px;"><a href="https://play.google.com/store/apps/details?id=com.crashr.social">Download</a></li>							
+						</ul>
+					</li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.crashr.social">Download</a> <!-- Direct link to the Play page -->
+					</li>
+                </ul>
+			</div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+			<div class="overlay" id="logo_over">
+			</div> <!-- From http://jsfiddle.net/shail/sUzc7/5/ -->
+			<div class="item active">
+            <!--    <div class="overlay"></div> <!-- From http://jsfiddle.net/shail/sUzc7/5/ --> 
+				<div class="fill" style="background-image:url('img/pic1_low.jpg');"></div>
+                <div class="carousel-caption">
+					<!-- Figure out how to change this text style -->
+                    <h1 style="font-size:72px; text-shadow: 1px 1px 15px #666;">
+						Stop looking. Start finding.
+					</h1>
+                </div>
+				<!-- Insert a hyper-link on the floating logo button. -->
+				<script>
+					$('#logo_over').each(function() {
+						  var link = $(this).html();
+						  $(this).contents().wrap('<a href="https://play.google.com/store/apps/details?id=com.crashr.social"></a>');
+					});
+				</script>
+				
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/pic2_low.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1 style="font-size:72px; text-shadow: 1px 1px 15px #666;">Find events to crash. And host yours.</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/pic3_low.jpg');"></div>
+            	<div class="carousel-caption">
+                    <h1 style="font-size:72px; text-shadow: 1px 1px 15px #666;">End the lonely life.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+	<!-- Alerts -->
+		<!--
+	<div class="alert alert-success" name="contact">
+		Go to download!
+	</div>
+		-->
+	
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 2000 //changes the speed. (ms?)
+    })
+    </script>
+</body>
+
+</html>
