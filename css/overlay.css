@@ -22,9 +22,7 @@
   left: 9px;
   width: 281px;
   height: 97px;
-  background-color: red;
-  opacity: 0.5;
-}
+  }
 
 @media (min-width: 768px) and (max-width: 979px) {
 .overlay{
