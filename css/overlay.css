@@ -21,8 +21,11 @@
        
       width:50%;
       height:50%;
-      
+    
 
+}
+#logo_over {
+  display: none;
 }
 
 }
@@ -32,5 +35,9 @@
       width:50%;
       height:50%;
       
+}
 
+#logo_over {
+  display: none;
+}
 }
