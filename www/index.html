@@ -1,0 +1,57 @@
+
+<head>
+	<style type="text/css" media="all">
+	   @import "css/index.css";
+	   @import "css/jquery-ui-1.10.4.custom.min.css";
+	</style>
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOZYhoMiRLvCw7vDLPGmlfmRBlbqE0IXs&sensor=false"></script>    
+</head>
+<body>
+	<div id="header">
+		<center>
+		<table width="100%">
+			<tr>
+			<td>
+				<img src="img/menu_gps.png" border="0" height="50px">
+			</td>
+			<td width="100%">
+				<center><img src="img/full_logo.png" alt="Logo" height="70px"></center>
+			</td>
+			<td>
+				<img src="img/menu_message.png" border="0" height="50px">
+			</td>
+			</tr>
+		</table>
+		</center>	
+	</div>
+	<div class="middle draggable">
+		<div id="pix">		
+			<center><img id="profile_img"></center>
+			<center><div id="map-canvas" /></center>
+		</div>
+		<br>
+		<center>
+		<table width="90%">
+			<tr>
+			<td width="40%">&nbsp;</td>
+			<td>
+				<center>
+				<table width="80%">
+					<tr>
+						<td><a id="no_img"><img id="no_img" src="img/btn_like_pressed.png" class="likes"><a></td>
+						<td><a id="info_img"><img id="info_img" src="img/btn_info_normal.png" class="info"><a></td>
+						<td><a id="yes_img"><img id="yes_img" src="img/	btn_like_normal.png" class="likes"></a></td>	
+					</tr>
+				</table>
+				</center>
+			</td>
+			<td width="40%">&nbsp;</td>			
+			</table>
+		</center>	
+		<br>			
+		<div id="debug"></div>
+	</div>
+</body>

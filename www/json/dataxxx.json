@@ -1,0 +1,7 @@
+{"events":[
+  {"eventTitle":"Cool Event",
+  "eventImage":"image.jpg",
+  "eventLocation":"address",
+  "eventDescription":"This is a cool party",
+  "dateAndTime":"Sunday 5:30pm"}
+]}
