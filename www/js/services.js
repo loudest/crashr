@@ -2,7 +2,7 @@ angular.module('crashrApp.services', []).factory('crashrAPIservice', function($h
   var crashrAPI = {};
   crashrAPI.getJSONData = function(){
     return $http({
-      method: 'JSONP',
+      method: 'GET',
       url: 'data.json'
     });
   }
