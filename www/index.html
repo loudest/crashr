@@ -7,7 +7,8 @@
 	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOZYhoMiRLvCw7vDLPGmlfmRBlbqE0IXs&sensor=false"></script>    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOZYhoMiRLvCw7vDLPGmlfmRBlbqE0IXs&sensor=false"></script>
+
 </head>
 <body data-ng-app="crashrApp" data-ng-controller="eventsController">
 	<div id="header">
@@ -29,7 +30,7 @@
 	</div>
 	<div class="middle draggable">
 		<div id="pix">
-			<center><img id="profile_img" src="{{currentEvent.eventImage}}"></center>
+			<center><img id="profile_img" data-ng-src="{{currentEvent.eventImage}}"></center>
 			<center><div id="map-canvas" /></center>
 		</div>
 		<br>
@@ -41,9 +42,9 @@
 				<center>
 				<table width="80%">
 					<tr>
-						<td><a id="no_img" ng-click="noEvent()"><img id="no_img" src="img/btn_like_pressed.png" class="likes"><a></td>
-						<td><a id="info_img" ng-click="infoEvent()"><img id="info_img" src="img/btn_info_normal.png" class="info"></a></td>
-						<td><a id="yes_img" ng-click="yesEvent()"><img id="yes_img" src="img/btn_like_normal.png" class="likes"></a></td>	
+						<td><a id="no_img" data-ng-click="noEvent()"><img id="no_img" src="img/btn_like_pressed.png" class="likes"><a></td>
+						<td><a id="info_img" data-ng-click="infoEvent()"><img id="info_img" src="img/btn_info_normal.png" class="info"></a></td>
+						<td><a id="yes_img" data-ng-click="yesEvent()"><img id="yes_img" src="img/btn_like_normal.png" class="likes"></a></td>	
 					</tr>
 				</table>
 				</center>
