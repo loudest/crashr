@@ -24,17 +24,17 @@ angular.module('crashrApp.controllers', []).controller('eventsController', funct
   });
 
   $scope.noEvent = function(){
-    var string = "Decline";
+    $scope.string = "Decline";
     $scope.nextEvent();
   }
 
   $scope.yesEvent = function(){
-    var string = "RSVP!";
+    $scope.string = "RSVP!";
     $scope.nextEvent();
   }
 
   $scope.infoEvent = function(){
-    var string = "EVENT INFO";
+    $scope.string = "EVENT INFO";
   }
 
 });
